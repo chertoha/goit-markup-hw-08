@@ -1,12 +1,24 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    &__title {
-        color: map-get($color, 'primary-header');
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 1.17;
-        text-align: center;
+
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
+}
+
+.section__title {
+    color: map-get($color, 'primary-header');
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 36px;
+    }
+
 }
