@@ -4,12 +4,17 @@
     width: 100%;
 
     @media screen and (max-width: ($tablet - 1)) {
-        position: absolute;
-        top: calc($mobile-header-padding-top * -1);
+        display: none;
+        // position: absolute;
+        position: fixed;
+        // top: calc($mobile-header-padding-top * -1);
+        top: 0;
         left: 0;
 
-        padding: 21px 15px 48px 40px;
+        padding: 10px 15px 48px 40px;
+        // height: calc(100% + 100vh);
         height: 100vh;
+
         // background-color: aqua;
         background-color: map-get($color, 'secondary-light');
         // background-color: rgba(255, 255, 255, 0.5);
@@ -22,18 +27,28 @@
     @media screen and (min-width: $tablet) {
         align-items: center;
         margin-left: 88px;
+
+        // &.is-open {
+        //     display: flex;
+        // }
     }
 
     @media screen and (min-width: $desktop) {
         margin-left: 93px;
     }
 
+    // @media screen and (max-width: ($tablet - 1)) {
+    //     // display: none;
+    // }
+
 }
 
 .is-open {
     @media screen and (max-width: ($tablet - 1)) {
-        display: none;
+        display: flex;
     }
+
+    // display: none;
 }
 
 
