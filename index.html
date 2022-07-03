@@ -220,7 +220,39 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="staff__list list">
             <li class="staff__item">
-              <img class="staff__image" src="./images/staff/staff_1.jpg" alt="Игорь Демьяненко" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/staff_1-image-desktop@1x.jpg 1x,
+                    ./images/staff/staff_1-image-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/staff_1-image-tablet@1x.jpg 1x,
+                    ./images/staff/staff_1-image-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/staff/staff_1-image-mobile@1x.jpg 1x,
+                    ./images/staff/staff_1-image-mobile@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 479px)"
+                />
+                <img
+                  class="staff__image"
+                  src="./images/staff/staff_1-image-desktop@1x.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
+
               <div class="staff__meta">
                 <h3 class="staff__name">Игорь Демьяненко</h3>
                 <p class="staff__major" lang="en">Product Designer</p>
@@ -262,7 +294,39 @@
             </li>
 
             <li class="staff__item">
-              <img class="staff__image" src="./images/staff/staff_2.jpg" alt="Ольга Репина" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/staff_2-image-desktop@1x.jpg 1x,
+                    ./images/staff/staff_2-image-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/staff_2-image-tablet@1x.jpg 1x,
+                    ./images/staff/staff_2-image-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/staff/staff_2-image-mobile@1x.jpg 1x,
+                    ./images/staff/staff_2-image-mobile@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 479px)"
+                />
+                <img
+                  class="staff__image"
+                  src="./images/staff/staff_2-image-desktop@1x.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
+
               <div class="staff__meta">
                 <h3 class="staff__name">Ольга Репина</h3>
                 <p class="staff__major" lang="en">Frontend Developer</p>
@@ -304,7 +368,39 @@
             </li>
 
             <li class="staff__item">
-              <img class="staff__image" src="./images/staff/staff_3.jpg" alt="Николай Тарасов" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/staff_3-image-desktop@1x.jpg 1x,
+                    ./images/staff/staff_3-image-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/staff_3-image-tablet@1x.jpg 1x,
+                    ./images/staff/staff_3-image-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/staff/staff_3-image-mobile@1x.jpg 1x,
+                    ./images/staff/staff_3-image-mobile@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 479px)"
+                />
+                <img
+                  class="staff__image"
+                  src="./images/staff/staff_3-image-desktop@1x.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
+
               <div class="staff__meta">
                 <h3 class="staff__name">Николай Тарасов</h3>
                 <p class="staff__major" lang="en">Marketing</p>
@@ -346,7 +442,39 @@
             </li>
 
             <li class="staff__item">
-              <img class="staff__image" src="./images/staff/staff_4.jpg" alt="Михаил Ермаков" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff/staff_4-image-desktop@1x.jpg 1x,
+                    ./images/staff/staff_4-image-desktop@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/staff_4-image-tablet@1x.jpg 1x,
+                    ./images/staff/staff_4-image-tablet@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff/staff_4-image-mobile@1x.jpg 1x,
+                    ./images/staff/staff_4-image-mobile@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width: 479px)"
+                />
+
+                <img
+                  class="staff__image"
+                  src="./images/staff/staff_4-image-desktop@1x.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
+
               <div class="staff__meta">
                 <h3 class="staff__name">Михаил Ермаков</h3>
                 <p class="staff__major" lang="en">UI Designer</p>
@@ -391,7 +519,7 @@
       </section>
 
       <!--Бренды-->
-      <section class="brand section display-none">
+      <section class="brand section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="brand__list list">
@@ -447,84 +575,104 @@
       </section>
     </main>
 
-    <footer class="page-footer display-none">
+    <footer class="page-footer">
       <div class="container page-footer__container">
-        <!-- Address -->
-        <div>
-          <a class="logo" href="./">Web<span class="logo__dark-theme-text">Studio</span></a>
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">
-                <p class="address__value">г. Киев, пр-т Леси Украинки, 26</p>
+        <div class="page-footer__company-data">
+          <!-- Address -->
+          <div class="page-footer__address-outer">
+            <a class="logo" href="./">Web<span class="logo__dark-theme-text">Studio</span></a>
+            <address class="address page-footer__address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <p class="address__value">г. Киев, пр-т Леси Украинки, 26</p>
+                </li>
+                <li class="address__item">
+                  <a class="address__link link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="address__item">
+                  <a class="address__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <!-- Socials -->
+          <div class="join-us">
+            <h2 class="join-us__title">присоединяйтесь</h2>
+            <ul class="socials list">
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="socials__link link socials__link--dark-theme"
+                  aria-label="instagram"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link link" href="mailto:info@example.com">info@example.com</a>
+
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="socials__link link socials__link--dark-theme"
+                  aria-label="twitter"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="socials__link link socials__link--dark-theme"
+                  aria-label="facebook"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a
+                  href=""
+                  class="socials__link link socials__link--dark-theme"
+                  aria-label="linkedin"
+                >
+                  <svg class="icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <!-- Socials -->
-        <div class="join-us">
-          <h2 class="join-us__title">присоединяйтесь</h2>
-          <ul class="socials list">
-            <li class="socials__item">
-              <a
-                href=""
-                class="socials__link link socials__link--dark-theme"
-                aria-label="instagram"
-              >
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a href="" class="socials__link link socials__link--dark-theme" aria-label="twitter">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a href="" class="socials__link link socials__link--dark-theme" aria-label="facebook">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a href="" class="socials__link link socials__link--dark-theme" aria-label="linkedin">
-                <svg class="icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!-- .address-socials-group -->
 
         <!-- Subscribe -->
         <form class="subscribe-form page-footer__subscribe-form" action="#">
           <label for="footer-subscribe-email">
-            <span class="subscribe-form__label">Подпишитесь на рассылку</span>
+            <span class="subscribe-form__label page-footer__subdcribe-label"
+              >Подпишитесь на рассылку</span
+            >
           </label>
 
-          <div class="subscribe-form__wrapper">
+          <div class="page-footer__from-wrapper">
             <input
               id="footer-subscribe-email"
-              class="subscribe-form__input input-highlight"
+              class="subscribe-form__input input-highlight page-footer__form-input"
               type="email"
               name="subscribe-email"
               placeholder="E-mail"
             />
 
-            <button class="subscribe-form__submit button button--primary" type="submit">
+            <button
+              class="subscribe-form__submit button button--primary page-footer__form-submit"
+              type="submit"
+            >
               Подписаться
               <svg class="icon button__icon-append" width="24" height="24">
                 <use href="./images/icons.svg#send-email"></use>

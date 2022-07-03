@@ -10,6 +10,8 @@
         // top: calc($mobile-header-padding-top * -1);
         top: 0;
         left: 0;
+        z-index: 999;
+        // pointer-events: none;
 
         padding: 10px 15px 48px 40px;
         // height: calc(100% + 100vh);
