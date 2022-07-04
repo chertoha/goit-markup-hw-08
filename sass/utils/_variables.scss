@@ -8,6 +8,11 @@ $color: (
     'default-icon': #afb1b8
 );
 
+
+//Container
+$container-side-padding: 15px;
+
+//Transition
 $default-transition-duration: 250ms;
 $default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $modal-transition-duration: 500ms;
