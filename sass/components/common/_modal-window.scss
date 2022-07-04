@@ -37,9 +37,4 @@
 
 }
 
-.modal-window__user-agreement {
-    @media screen and (max-width: ($desktop - 1)) {
-        font-size: 12px;
-        line-height: 1.17;
-    }
-}
+.modal-window__user-agreement {}
