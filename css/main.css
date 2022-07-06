@@ -183,6 +183,8 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .modal-window {
+    height: 90vh;
+    overflow: auto;
     width: 450px;
   }
 }
